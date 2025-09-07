@@ -1,6 +1,5 @@
-
-const div = document.getElementById("miDiv");
-
-div.addEventListener("click", () => {
-  alert("Hola! Soy el div");
+const boton = document.querySelector("button");
+boton.addEventListener("click", (event) => {
+  event.stopPropagation(); 
+  alert("Hola! Soy el botón");
 });
